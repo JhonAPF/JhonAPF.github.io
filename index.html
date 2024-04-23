@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyperblog - Tu blog de confianza</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Hyperblog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div id="logo">
-            <a href="https://imgur.com/mpQrJkP"><img src="https://i.imgur.com/mpQrJkP.jpg" title="source: imgur.com" alt="Logo"></a>
-        </div>
-        <div id="cabecera">
-            <h1>Hyperblog</h1>
-            <span id="Tagline">Tu blog de confianza</span>
+        <div class="container">
+            <div id="logo">
+                <img src="https://i.imgur.com/9HLVd7Z.gif" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Más</a>
+                        <div class="dropdown-content">
+                            <a href="#">Portafolio</a>
+                            <a href="#">Testimonios</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <div id="container">
-        <main>
-            <article id="post">
-                <h2>Este es el título atractivo e interesante del post</h2>
-                <p>Y este es el párrafo de inicio donde vamos a explicar las cosas increíbles que se pueden hacer con las ramas en git.</p>
-                <p>Este es un cambio de rama cabecera que irá al master y este es el párrafo de desarrollo donde se explicarán los comandos a utilizar.</p>
-                <p>Agregando una suscripción de test para el merge.</p>
-                <p>Rama header.</p>
-                <p class="center">
-                    <a href="https://imgur.com/D4JkJcm"><img src="https://i.imgur.com/D4JkJcm.png" title="source: imgur.com" alt="Descripción de la imagen"></a>
-                </p>
-            </article>
-        </main>
-    </div>
-    
-    <footer id="footer">
-        Realizado desde la rama footer ❤️
+    <section id="hero">
+        <div class="container">
+            <h1>Bienvenido a Hyperblog</h1>
+            <p>Tu blog de confianza</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>What You Do Today Will Be What You Will Be Tomorrow</h2>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <a href="https://imgur.com/YijLU6u">
+                <img src="https://i.imgur.com/YijLU6u.png" alt="source: imgur.com" style="width: 350px;">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hyperblog. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
