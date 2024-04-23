@@ -1,0 +1,58 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #324e66;
+    font-size: 20px;
+    
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+#logo img {
+    max-height: 250px;
+}
+
+#nav a {
+    margin-right: 35px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#intro {
+    background-image: url('https://i.imgur.com/9HLVd7Z.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0;
+    text-align: center;
+    color: white;
+}
+
+#intro h1 {
+    font-size: 36px;
+}
+
+#services {
+    background-color: #324e66;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    padding: 0px;
+}
+
+.text-box {
+    padding: 0px;
+    text-align: center;
+    font-size: 24px;
+}
