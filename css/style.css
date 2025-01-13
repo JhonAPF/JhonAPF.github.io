@@ -1,58 +1,107 @@
 /* style.css */
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #324e66;
-    font-size: 20px;
-    
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 #header {
+    background-color: #324e66;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#logo img {
-    max-height: 249px;
+#header img {
+    max-height: 50px;
 }
 
 #nav a {
-    margin-right: 20px;
     color: white;
     text-decoration: none;
+    margin-left: 20px;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+#nav a:hover {
+    color: #ff9800;
 }
 
 #intro {
+    text-align: center;
+    padding: 100px 20px;
     background-image: url('https://i.imgur.com/9HLVd7Z.gif');
     background-size: cover;
     background-position: center;
-    padding: 250px 0;
-    text-align: center;
     color: white;
 }
 
-#intro h1 {
-    font-size: 36px;
+#intro .btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-#services {
+#intro .btn:hover {
+    background-color: #e68900;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #324e66;
+}
+
+.project {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project .btn {
+    display: inline-block;
     background-color: #324e66;
-    padding: 50px 0;
-    text-align: center;
     color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.container {
-    padding: 0px;
+.project .btn:hover {
+    background-color: #ff9800;
 }
 
-.text-box {
-    padding: 0px;
+#footer {
+    background-color: #324e66;
+    color: white;
     text-align: center;
-    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
 }

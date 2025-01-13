@@ -3,57 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <title>IoT JC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JAPF</title>
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <div id="logo">
-            <img src="https://i.imgur.com/YijLU6u.png" alt="Logo de la Empresa">
+            <img src="https://i.imgur.com/YijLU6u.png" alt="Logo IoT JC">
         </div>
-        <div id="nav">
-            <a href="#">Inicio</a>
-            <a href="#">Repositorio GitHub</a>
-            <a href="#">¿Quién soy?</a>
-            <a href="#">Hoja de vida</a>
-            <a href="#">Contacto</a>
+        <nav id="nav">
+            <a href="#intro">Inicio</a>
+            <a href="https://github.com/JhonAPF" target="_blank">Repositorio GitHub</a>
+            <a href="#about">¿Quién soy?</a>
+            <a href="https://www.linkedin.com/in/jhon-alexander-fonseca-7853562a2/">LinkedIn</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h1>Bienvenido a JAPF</h1>
+        <p>Explora mis proyectos de IoT, desarrollo tecnológico y automatización.</p>
+        <a href="#projects" class="btn">Ver Proyectos</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>¿Quién soy?</h2>
+        <p style="text-align: justify;">Ingeniero Electrónico Titulado con formación complementaria en Cloud Computing y desarrollo Backend. Experiencia en 
+            automatización de procesos, diseño de APIs funcionales e implementación de soluciones IoT. Certificado en AWS Cloud 
+            Practitioner y capacitado en Google Cloud Platform (GCP). Habilidades en programación con Python, C/C++, Java, 
+            JavaScript, HTML y CSS, manejo de metodologías ágiles Scrum. Apasionado por el diseño, despliegue y optimización de 
+            arquitecturas escalables en la nube, así como por afrontar retos tecnológicos en infraestructura on-premises y entornos 
+            híbridos. </p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Proyectos Destacados</h2>
+        <div class="project">
+            <img src="https://i.imgur.com/Hr7NWQo.png" alt="Proyecto IoT de Monitoreo">
+            <h3>Proyecto IoT de Monitoreo</h3>
+            <p>Desarrollo de un sistema IoT para monitorear temperatura y humedad utilizando sensores MQTT y panel de visualización en Thingsboard. El proyecto incluyó almacenamiento en PostgreSQL y programación en Python y C++.</p>
         </div>
-    </div>
-    <div id="intro">
-        <h1>Proyectos,</h1>
-        <p>Desarrollo de proyectos</p>
-    </div>
-    <div id="services">
-        <h2>Seccional</h2>
-        <p>Desarrollo de proyectos en tecnológicos.</p>
-    </div>
-    <div id="company-description" style="background-color: white; padding: 20px;">
-        <div class="container" style="display: flex; flex-direction: row;">
-            <img src="https://i.imgur.com/Hr7NWQo.png" alt="Descripción de la empresa" style="width: 50%;">
-            <div class="text-box" style="width: 50%;">
-                <h3>Gestión de proyectos</h3>
-                <p>Experiencia como Product Owner Junior en el sector bancario, metodologías agiles.</p>
-                <p>Automatización de procesos internos, liberación de recursos humanos, optimización de tareas.</p>
-            </div>
+        <div class="project">
+            <img src="https://i.imgur.com/Oa2f3kB.png" alt="Automatización de Procesos">
+            <h3>Automatización de Procesos</h3>
+            <p>Diseño e implementación de procesos automatizados en el sector bancario, logrando una reducción del 15% en tiempos operativos mediante el uso de scripts en Python y herramientas de integración.</p>
         </div>
-        <div class="container" style="display: flex; flex-direction: row-reverse;">
-            <img src="https://i.imgur.com/Oa2f3kB.png" alt="Descripción de la empresa" style="width: 50%;">
-            <div class="text-box" style="width: 50%;">
-                <h3>Manejo control de versiones, Git y GitHub</h3>
-                <p>Manejo de proyectos tecnológicos en repositorio de Git y GitHub</p>
-            </div>
+        <div class="project">
+            <img src="https://i.imgur.com/YijLU6u.png" alt="Desarrollo Backend">
+            <h3>Desarrollo Backend</h3>
+            <p>Diseño de APIs RESTful funcionales para la integración de plataformas, utilizando Node.js y AWS Lambda, con enfoque en escalabilidad y alta disponibilidad.</p>
         </div>
-        <div class="container" style="display: flex; flex-direction: row;">
-            <img src="https://i.imgur.com/Hr7NWQo.png" alt="Descripción de la empresa" style="width: 50%;">
-            <div class="text-box" style="width: 50%;">
-                <h3>Lenguajes de programación</h3>
-                <p>Manejo de lenguajes:</p>
-                <p>Python</p>
-                <p>C / C++</p>
-                <p>Java / JavaScript</p>
-                <p>PLC's Dispositivos lógicos programables</p>
-            </div>
-        </div>
-    </div>
+    </section>
+
+    <section id="resume" class="section">
+        <h2>Perfil Profesional LinkedIn</h2>
+        <p>Conoce más sobre mi experiencia profesional.</p>
+        <a href="https://www.linkedin.com/in/jhon-alexander-fonseca-7853562a2/" target="_blank" class="btn">LinkedIn</a>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Competencias y Habilidades</h2>
+        <ul style="text-align: justify;">
+            <li><strong>Idiomas:</strong> Español: Nativo | Inglés: Intermedio B1.</li>
+            <li><strong>DevOps - Cloud Computing:</strong>
+                <ul>
+                    <li>Cloud Platforms: AWS, GCP, Azure.</li>
+                    <li>DevOps: Conocimientos fundamentales en Docker, Kubernetes (Clústeres, Pods, Dockerfile).</li>
+                    <li>Infraestructura: Conocimiento en IaaS, PaaS, SaaS.</li>
+                    <li>Interés en entornos híbridos y contenedores para la optimización de infraestructura.</li>
+                </ul>
+            </li>
+            <li><strong>Programación:</strong> Python, C, C++, Java, JavaScript, HTML, CSS, SQL.</li>
+            <li><strong>Software:</strong> MatLab, NetBeans, MPLAB X IDE, Arduino, Visual Studio Code, Keil uVision, Apps Script Google, Postman, Insomnia.</li>
+            <li><strong>Herramientas de Programación:</strong> Terminal de Linux (Ubuntu), PowerShell, Command Prompt Windows, Git, GitHub.</li>
+            <li><strong>Software IoT:</strong> ThingsBoard (Open-source IoT Platform), MQTT.</li>
+            <li><strong>Gestión de Proyectos:</strong> Metodologías Ágiles SCRUM, Jira Software.</li>
+            <li><strong>Otros:</strong> Excel, Word, PowerPoint, G-Suite, OrCAD Capture, Proteus, Ni Multisim, KiCAD, Cisco Packet Tracer, TIA Portal, Factory IO, Fluidsim, CST Studio Suite, AWR.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <p>¡Hablemos! Puedes contactarme a través de:</p>
+        <p>Email: <a href="mailto:asdasdasdasdasnnn.com">nn.com</a></p>
+        <p>Teléfono: +57 123 456 7890</p>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2025 JAPF. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
