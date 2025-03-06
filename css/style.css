@@ -8,6 +8,12 @@
     --gold-color: #ffd700;
 }
 
+.crater-image {
+    border-radius: 50%;
+    clip-path: circle(50% at center);
+    object-fit: cover;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -151,7 +157,7 @@ body {
 
 #controls-container {
     flex: 1;
-    background-color: rgba(52, 20, 20, 0.75);
+    background-color: rgba(14, 10, 44, 0.75);
     padding: 20px;
     border-radius: 10px;
     position: relative;
@@ -163,12 +169,21 @@ body {
 .controls label {
     display: block;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .controls input,
-.controls select,
 .controls button {
-    width: 100%;
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: var(--control-background);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+.controls select {
+    width: 88%;
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
