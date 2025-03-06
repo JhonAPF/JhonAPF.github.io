@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal de JAPF y simulador de impacto de asteroides.">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>JAPF</title>
+    <title>JAPF - Asteroid Impact Simulator</title>
 </head>
 <body>
+    <!-- Header y Navegación -->
     <header id="header">
         <div id="logo">
             <img src="https://i.imgur.com/YijLU6u.png" alt="Logo IoT JC">
@@ -22,22 +25,20 @@
         </nav>
     </header>
 
+    <!-- Sección de Inicio -->
     <section id="intro">
         <h1>Bienvenido a JAPF</h1>
         <p>Explora mis proyectos de IoT, desarrollo tecnológico y automatización.</p>
         <a href="#projects" class="btn">Ver Proyectos</a>
     </section>
 
+    <!-- Sección "¿Quién soy?" -->
     <section id="about" class="section">
         <h2>¿Quién soy?</h2>
-        <p style="text-align: justify;">Ingeniero Electrónico Titulado con formación complementaria en Cloud Computing y desarrollo Backend. Experiencia en 
-            automatización de procesos, diseño de APIs funcionales e implementación de soluciones IoT. Certificado en AWS Cloud 
-            Practitioner y capacitado en Google Cloud Platform (GCP). Habilidades en programación con Python, C/C++, Java, 
-            JavaScript, HTML y CSS, manejo de metodologías ágiles Scrum. Apasionado por el diseño, despliegue y optimización de 
-            arquitecturas escalables en la nube, así como por afrontar retos tecnológicos en infraestructura on-premises y entornos 
-            híbridos. </p>
+        <p style="text-align: justify;">Ingeniero Electrónico Titulado con formación complementaria en Cloud Computing y desarrollo Backend. Experiencia en automatización de procesos, diseño de APIs funcionales e implementación de soluciones IoT. Certificado en AWS Cloud Practitioner y capacitado en Google Cloud Platform (GCP). Habilidades en programación con Python, C/C++, Java, JavaScript, HTML y CSS, manejo de metodologías ágiles Scrum. Apasionado por el diseño, despliegue y optimización de arquitecturas escalables en la nube, así como por afrontar retos tecnológicos en infraestructura on-premises y entornos híbridos.</p>
     </section>
 
+    <!-- Sección de Proyectos -->
     <section id="projects" class="section">
         <h2>Proyectos Destacados</h2>
         <div class="project">
@@ -57,12 +58,49 @@
         </div>
     </section>
 
+    <!-- Sección del Simulador de Impacto de Asteroides -->
+    <section id="simulator" class="section">
+        <div class="simulator-container">
+            <h2>Simulador de Impacto de Asteroides</h2>
+            <div class="container">
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+                <div id="controls-container">
+                    <div class="controls">
+                        <label for="distance">Distance from Impact (km):</label>
+                        <input type="number" id="distance" min="1" max="20000" value="400">
+                        <label for="diameter">Diameter (m):</label>
+                        <input type="number" id="diameter" min="1" max="10000" value="100">
+                        <label for="material">Asteroid Material:</label>
+                        <select id="material">
+                            <option value="iron">Iron</option>
+                            <option value="rock">Rock</option>
+                            <option value="ice">Ice</option>
+                        </select>
+                        <label for="speed">Impact Speed (km/s):</label>
+                        <input type="number" id="speed" min="1" max="100" value="15">
+                        <label for="angle">Impact Angle (degrees):</label>
+                        <input type="number" id="angle" min="0" max="90" value="45">
+                        <label for="target-density">Target Density (kg/m³):</label>
+                        <input type="number" id="target-density" min="1000" max="5000" value="3000">
+                        <button id="launch">Launch Asteroid</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                    <div id="results"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de LinkedIn -->
     <section id="resume" class="section">
         <h2>Perfil Profesional LinkedIn</h2>
         <p>Conoce más sobre mi experiencia profesional.</p>
         <a href="https://www.linkedin.com/in/jhon-alexander-fonseca-7853562a2/" target="_blank" class="btn">LinkedIn</a>
     </section>
 
+    <!-- Sección de Habilidades -->
     <section id="skills" class="section">
         <h2>Competencias y Habilidades</h2>
         <ul style="text-align: justify;">
@@ -84,6 +122,7 @@
         </ul>
     </section>
 
+    <!-- Sección de Contacto -->
     <section id="contact" class="section">
         <h2>Contacto</h2>
         <p>¡Hablemos! Puedes contactarme a través de:</p>
@@ -91,8 +130,13 @@
         <p>Teléfono: +57 123 456 7890</p>
     </section>
 
+    <!-- Footer -->
     <footer id="footer">
         <p>&copy; 2025 JAPF. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
