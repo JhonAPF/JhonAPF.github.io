@@ -1,7 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const map = L.map('map').setView([4.65, -74.1], 5);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
+    const map = L.map('map', {
+        center: [4.65, -74.1], 
+        zoom: 2.5,
+        maxBounds: [
+            [-100, -180],
+            [100, 180]
+        ],
+        maxBoundsViscosity: 1.0
+    });
+    
+    var esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles © Esri',
+        noWrap: true
+    }).addTo(map);
+
+    var esriLabels = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Labels © Esri',
+        noWrap: true
     }).addTo(map);
 
     let impactMarker = null;
